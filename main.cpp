@@ -20,7 +20,16 @@ int main() {
         std::cout << "W - Reproducir / Pausar\n";
         std::cout << "Q - Pista Anterior\n";
         std::cout << "E - Pista Siguiente\n";
-        
+        std::cout << "S - Activar/Desactivar modo aleatorio\n";
+        std::cout << "R - Repetición (Desactivado / Repetir una / Repetir todas)\n";
+        std::cout << "A - Ver lista de reproducción actual\n";
+        std::cout << "L - Listado de canciones\n";
+        std::cout << "X - Salir\n";
+        std::cout << "Ingrese una opción: \n";
+        std::cin >> opcion;
+
+        switch (opcion) {}
+
     }
 
 
