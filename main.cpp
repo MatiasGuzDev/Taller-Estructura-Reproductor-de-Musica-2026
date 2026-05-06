@@ -14,7 +14,7 @@ int main() {
     char opcion;
     do {
         std::cout << "\n=========================================\n";
-        reproductor.();
+        reproductor.mostrarMenuPrincipal();
         std::cout << "\n=========================================\n";
         std::cout << "Opciones:\n";
         std::cout << "W - Reproducir / Pausar\n";
@@ -28,20 +28,43 @@ int main() {
         std::cout << "Ingrese una opción: \n";
         std::cin >> opcion;
 
-        switch (opcion) {}
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
+        switch (opcion) {
+            case 'w':
+            case 'W':
+                reproductor.reproducirPausar();
+                break;
+            case 'q':
+            case 'Q':
+                reproductor.pistaAnterior();
+                break;
+            case 'e':
+            case 'E':
+                reproductor.pistaSiguiente();
+                break;
+            case 's':
+            case 'S':
+                reproductor.alternarModoAleatorio();
+                break;
+            case 'r':
+            case 'R':
+                reproductor.alternarRepeticion();
+                break;
+            case 'a':
+            case 'A':
+                reproductor.verListaReproduccion();
+                break;
+            case 'l':
+            case 'L':
+                reproductor.verListadoCanciones();
+                break;
+            case 'x':
+            case 'X':
+                reproductor.guardarEstado();
+                std::cout << "Saliendo programa...\n";
+                break;
+            default:
+                std::cout << "Opción no válida, intente nuevamente.\n";
+        }
+    } while (opcion != 'x' && opcion != 'X');
+    return 0;
 }
