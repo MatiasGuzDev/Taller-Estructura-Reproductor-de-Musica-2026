@@ -39,6 +39,10 @@ Ve a File > Reload CMake Project.
 
 Presiona el botón del Martillo (Build) o Ctrl + F9.
 
+Diagrama de Clase
+
+<img width="764" height="707" alt="Diagrama sin título drawio" src="https://github.com/user-attachments/assets/006b0ad3-c744-4802-af83-3f36aa4fc63e" />
+
 Proyecto realizado por:
 -Martin Canales Barraza
 -Matias Guzman Matus 
