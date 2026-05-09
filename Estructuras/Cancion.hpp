@@ -27,7 +27,7 @@ public:
     std::string getAlbum() const;
     int getAno() const;
     int getDuracion() const;
-    std::string getUbicion() const;
+    std::string getUbicacion() const;
 
 };
 

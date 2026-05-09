@@ -21,11 +21,11 @@ int main() {
         std::cout << "Q - Pista Anterior\n";
         std::cout << "E - Pista Siguiente\n";
         std::cout << "S - Activar/Desactivar modo aleatorio\n";
-        std::cout << "R - Repetición (Desactivado / Repetir una / Repetir todas)\n";
-        std::cout << "A - Ver lista de reproducción actual\n";
+        std::cout << "R - Repeticion (Desactivado / Repetir una / Repetir todas)\n";
+        std::cout << "A - Ver lista de reproduccion actual\n";
         std::cout << "L - Listado de canciones\n";
         std::cout << "X - Salir\n";
-        std::cout << "Ingrese una opción: \n";
+        std::cout << "Ingrese una opcion: \n";
         std::cin >> opcion;
 
         switch (opcion) {
@@ -63,7 +63,7 @@ int main() {
                 std::cout << "Saliendo programa...\n";
                 break;
             default:
-                std::cout << "Opción no válida, intente nuevamente.\n";
+                std::cout << "Opcion no válida, intente nuevamente.\n";
         }
     } while (opcion != 'x' && opcion != 'X');
     return 0;

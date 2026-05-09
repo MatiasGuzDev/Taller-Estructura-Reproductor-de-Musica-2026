@@ -3,12 +3,12 @@
 
 #include <iostream>
 #include <stdexcept>
-#include "Node.h"
+#include "Nodo.h"
 
 template <typename T>
 class LinkedList {
 private:
-    Node<T>* head;
+    Nodo<T>* head;
     int length;
 
 public:
@@ -19,7 +19,7 @@ public:
 
     ~LinkedList() {
         while (!isEmpty()) {
-            Node<T>* temp = head;
+            Nodo<T>* temp = head;
             head = head->next;
             delete temp;
             length--;
@@ -35,11 +35,11 @@ public:
     }
 
     void append(T data) {
-        Node<T>* newNode = new Node<T>(data);
+        Nodo<T>* newNode = new Nodo<T>(data);
         if (head == nullptr) {
             head = newNode;
         } else {
-            Node<T>* current = head;
+            Nodo<T>* current = head;
             while (current->next != nullptr) {
                 current = current->next;
             }
@@ -59,7 +59,7 @@ public:
         if (index < 0 || index >= length) {
             throw std::out_of_range("Indice fuera de rango");
         }
-        Node<T>* current = head;
+        Nodo<T>* current = head;
         for (int i = 0; i < index; i++) {
             current = current->next;
         }
@@ -71,7 +71,7 @@ public:
         if (index < 0 || index >= length) {
             throw std::out_of_range("Indice fuera de rango");
         }
-        Node<T>* current = head;
+        Nodo<T>* current = head;
         for (int i = 0; i < index; i++) {
             current = current->next;
         }
@@ -79,7 +79,7 @@ public:
     }
 
     void display() const {
-        Node<T>* current = head;
+        Nodo<T>* current = head;
         if (current == nullptr) {
             std::cout << "La lista esta vacia.\n";
             return;
